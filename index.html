@@ -1,16 +1,327 @@
 <!doctype html>
 <html>
+
 <style>
-	@font-face {
-    font-family: default;
-    src: url(css/fonts/logofont.ttf);
+ #socialIcon{
+			cursor:pointer;
+	  }
+	
+	body::before{
+	
+         content: "";
+  display: block;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -10;
+  background: url('f8rtybg.png') no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover; 
+  -o-background-size: cover;
+  background-size: cover;
+  text-align:Center;
+       }
+	   
+	  
+#socialIcon{
+ height:auto; 
+ max-width:5%; 
+ margin-left:20px;
+ margin-top: 10px;
+ vertical-align:center;
+}
+@font-face {
+font-family: "LogoFont";
+src: url("css/fonts/logofont.ttf");
+}
+h1 {
+  color:#FF00E6;
+  font-family: 'LogoFont', sans-serif;
+  font-size:64px;
+  letter-spacing:10px;
+  animation: text-flicker 3s linear infinite;
+  text-align:center;	
+}
+#offset {
+  animation: letter-flicker 2s linear infinite;
+}
+@keyframes text-flicker {
+  0% {
+    opacity:0.1;
+    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
+  }
+  
+  2% {
+    opacity:1;
+    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
+  }
+  8% {
+    opacity:0.1;
+    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
+  }
+  9% {
+    opacity:1;
+    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
+  }
+  12% {
+    opacity:0.1;
+    text-shadow: 0px 0px rgba(242, 22, 22, 1);
+  }
+  20% {
+    opacity:1;
+    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1)
+  }
+  25% {
+    opacity:0.3;
+    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1)
+  }
+  30% {
+    opacity:1;
+    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1)
+  }
+  
+  70% {
+    opacity:0.7;
+    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1)
+  }
+  
+  72% {
+    opacity:0.2;
+    text-shadow:0px 0px 29px rgba(242, 22, 22, 1)
+  }
+  
+  77% {
+    opacity:.9;
+    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1)
+  }
+  100% {
+    opacity:.9;
+    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1)
+  }
+}
+@keyframes border-flicker {
+  0% {
+    opacity:0.1;
+    -webkit-box-shadow: 0px 0px 78px 4px rgba(16,134,232,0.73);
+-moz-box-shadow: 0px 0px 78px 4px rgba(16,134,232,0.73);
+box-shadow: 0px 0px 78px 4px rgba(16,134,232,0.73);
+  }
+  2% {
+    opacity:1;
+    -webkit-box-shadow: 0px 0px 78px 4px rgba(16,134,232,0.73);
+-moz-box-shadow: 0px 0px 78px 4px rgba(16,134,232,0.73);
+box-shadow: 0px 0px 78px 4px rgba(16,134,232,0.73);
+  }
+  4% {
+    opacity:0.1;
+    -webkit-box-shadow: 0px 0px 78px 4px rgba(16,134,232,0.73);
+-moz-box-shadow: 0px 0px 78px 4px rgba(16,134,232,0.73);
+box-shadow: 0px 0px 78px 4px rgba(16,134,232,0.73);
+  }
+  
+  8% {
+    opacity:1;
+    -webkit-box-shadow: 0px 0px 78px 4px rgba(16,134,232,0.73);
+-moz-box-shadow: 0px 0px 78px 4px rgba(16,134,232,0.73);
+box-shadow: 0px 0px 78px 4px rgba(16,134,232,0.73);
+  }
+  70% {
+    opacity:0.7;
+    -webkit-box-shadow: 0px 0px 78px 4px rgba(16,134,232,0.73);
+-moz-box-shadow: 0px 0px 78px 4px rgba(16,134,232,0.73);
+box-shadow: 0px 0px 78px 4px rgba(16,134,232,0.73);
+  }
+  100% {
+    opacity:1;
+    -webkit-box-shadow: 0px 0px 78px 4px rgba(16,134,232,0.73);
+-moz-box-shadow: 0px 0px 78px 4px rgba(16,134,232,0.73);
+box-shadow: 0px 0px 78px 4px rgba(16,134,232,0.73);
+  }
+}
+@keyframes letter-flicker {
+  0% {
+    opacity:0.1;
+    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
+  }
+  2% {
+    opacity:0.1;
+    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
+  }
+  4% {
+    opacity:1;
+    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
+  }
+  
+  
+  19% {
+    opacity:1;
+    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
+  }
+  21% {
+    opacity:0.1;
+    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
+  }
+  23% {
+    opacity:1;
+    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
+  }
+  
+  80% {
+    opacity:1;
+    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
+  }
+  83% {
+    opacity:0.4;
+    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
+  }
+  87% {
+    opacity:1;
+    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
+  }
+}
+	
+	@media only screen and (max-width: 850px) {
+	h1 {
+	
+	  font-size:25px;
+	  letter-spacing:10px;
+	  }
+	 
+	}
+	@media only screen and (max-width: 600px) {
+	
+	h1 {
+	
+	  font-size:48px;
+	  letter-spacing:10px;
+	  }
+	
+	}
+		@media only screen and (max-width: 500px) {
+	h1 {
+	
+	  font-size:40px;
+	  letter-spacing:10px;
+	  }
+	
 	}
 	
+	@media only screen and (max-width: 410px) {
+	h1 {
 	
+	  font-size:38px;
+	  letter-spacing:7px;
+	  }
+
+	}
+		
+	@media only screen and (max-width: 350px) {
+	h1 {
 	
+	  font-size:32px;
+	  letter-spacing:7px;
+	  }
+	
+	}
+	
+	#player{
+	
+
+  position: absolute;
+  bottom: 0px;
+  margin-right: auto;
+  margin-left: auto;
+  left: 50%;
+  transform: translate(-50%, 0);
+	width:100%;
+	height:4%;
+	}
+
+
+	
+	/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
 </style>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+.header {
+  text-align: center;
+  padding: 32px;
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+</style>
+
 <head>
-	
+<meta property="og:image" content="/f8rtybg.png" />
+<meta name="google-site-verification" content="-2hiK-xySraWakqV_vUjQ6_M-eAsN4NfEyU_y3x0eA8" />
 <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
 <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
 <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
@@ -29,25 +340,45 @@
 <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
 <meta name="theme-color" content="#ffffff">
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=yes">
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 	<title>F8RTY - Vibe With Us.</title>
 </head>
 
-	<!-- Bootstrap includes -->
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
 
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-	<script ysrc="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
-	
-<body style="background-color: black;">
 
-	<img src="f8rtybg.png" style="height:100%; display:block; margin-left:auto; margin-right:auto; width:50%; vertical-align: middle; ";>
-	
 
+
+<body>
+
+
+	<!-- <div id="text">
+		<h1>V<span id="offset">I</span>BE WITH US. <img  id="socialIcon" onclick="window.open('https://www.twitter.com/f8rtymusic');" src="twitter.png" /><img  id="socialIcon"  src="ig.png" onclick="window.open('https://www.instagram.com/f8rty');" /><img  id="socialIcon"  src="fb.png" onclick="window.open('https://www.facebook.com/f8rty');"/><img   id="socialIcon"  onclick="window.open('https://open.spotify.com/user/f8rty/playlist/0onhiVUGpLnFRL4aX9ZbsQ');" src="spotify.png" /></h1>
+	</div>
+	-->
 	
-	
+	<!-- Photo Grid -->
+<div class="row"> 
+  <div class="column">
+    <img src="img/anxious.jpg" style="width:100%">
+    <img src="img/backforyou.jpg" style="width:100%">
+    <img src="img/comotu.jpg" style="width:100%">
+
+  </div>
+  <div class="column">
+    <img src="img/insect.jpg" style="width:100%">
+    <img src="img/moodchange.jpg" style="width:100%">
+    <img src="img/nomore.jpeg" style="width:100%">
+  </div>  
+  <div class="column">
+    <img src="img/outtatime.jpeg" style="width:100%">	
+    <img src="img/right.png" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="img/smoke.jpg" style="width:100%">
+	<img src="img/whoami.jpg" style="width:100%">
+  </div>
+</div>
+
 </body>
-
 </html>

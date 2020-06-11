@@ -1,0 +1,81 @@
+@font-face {
+    font-family: 'futura_hv_btheavy_italic';
+    src: url('/fonts/logofont-webfont.woff2') format('woff2'),
+         url('/fonts/logofont-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#headerLogo{
+
+    -webkit-filter:invert(100%);
+    filter:invert(100%);
+
+
+}
+
+a{
+    font-size:24px !important;
+}
+
+a:link{
+    text-decoration: none;
+    color: #FF00E6;
+    margin-left:40px;
+}
+a:hover{
+    text-decoration: none;
+    color: blue;
+  
+}
+.headerNav {
+    font-family: 'futura_hv_btheavy_italic';
+    background-color: black;
+    height: 15%;
+    width:100%;
+    
+}
+
+.dropdown-item{
+    color:#FF00E6;
+   
+}
+
+li.nav-item{
+
+   
+    text-align:center;
+ 
+}
+
+.nav-item{
+
+    padding-right:60%;
+}
+
+#nav{
+     
+    font-family: 'futura_hv_btheavy_italic';
+    background-color: black !important;
+    
+
+}
+
+
+.nav-link{
+    color:#FF00E6;
+    font-family: 'futura_hv_btheavy_italic';
+}
+
+.bg-dark{
+    background-color: black;
+
+}
+
+#navbarNavDropdown{
+
+    font-size:
+
+
+}
+
